@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="pp.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./../images/favicon-32x32.png">
+
+  <title>Property Details</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">LOGO</div>
+    <div class="links">
+      <ul>
+        <li><a href="/sale/index.html">FOR SALE</a></li>
+        <li><a href="/rent/index.html">FOR RENT</a></li>
+        <li><a href="/categories/index.html">CATEGORIES</a></li>
+        <li><a href="">MARKET TRENDS</a></li>
+        <li><a href="../RequestPage\index.html">REQUESTS</a></li>
+        <li><a href="../contact/index.html">CONTACT US</a></li>
+      </ul>
+    </div>
+    <div class="sign" onclick="openCart()"><span>WISHLIST<img src="../images/icon-person.svg" alt=""></span>
+    </div><a href="/dashboard/index.html">
+      <div class="dash-btn"><img src="/images/bxs-dashboard (2).svg" alt=""></div>
+    </a>
+  </nav>
+
+  <main>
+    <section class="text">
+      <h4>DREAM RENTALS</h4>
+      <h1 id="itemname">2 story 4 rooms Duplex</h1>
+      <p>STATE: DELTA <br>
+        TOWN: OLEH <br>
+        LOCATION: TRANSFORMER ROAD <br>
+        AGENT: <a href="/my page/index.html"> ALEXANDRA HAMILTON </a><br>
+        CONTACT: REALEASED AFTER PAYMENT
+      </p>
+      <div class="prices">
+        <input id="itemprice" value="$500,000" disabled>
+        <p>$550,000</p>
+      </div>
+      <div class="btns">
+        <button id="addcart" class="addcart" onclick="addToCart()"><img src="../images/icon-cart.svg" alt=""> Add to
+          wishlist</button>
+        <button id="buy-btn" class="addcart"><img src="../images/bxs-purchase-tag.svg" alt="">Purchase</button>
+      </div>
+      <section class="asksec" id="asksec">
+        <h2>Make an Enquiry</h2>
+        <h4>Replies to your enquiries will be sent to your email</h4>
+        <form action="">
+          <textarea name="ask" id="ask" cols="50" rows="05">Whats your Question</textarea>
+          <!-- <input type="text" placeholder="Whats your Question" required>-->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </section>
+    <section class="images">
+      <div class="mainimg">
+        <video src="/images/video.mp4" alt="">
+      </div>
+      <div class="thumbnails">
+        <img src="../images/house.jpeg" alt="" class="thumbimg" id="current" onclick="viewImages()">
+        <img src="../images/12.jpg" alt="" class="thumbimg" onclick="viewImages()">
+        <img src="../images/7.jpg" alt="" class="thumbimg" onclick="viewImages()">
+        <img src="../images/8.jpg" alt="" class="thumbimg" onclick="viewImages()">
+      </div>
+    </section>
+    <section class="pics" id="pics">
+      <img src="../images/icon-close-white.svg" alt="" id="close-btn" onclick="closeImages()">
+      <div class="imgs">
+        <img src="../images/house.jpeg" id="mainpic" alt="" class="mainpic">
+        <img src="../images/12.jpg" id="mainpic" alt="" class="mainpic">
+        <img src="../images/7.jpg" alt="" id="mainpic" class="mainpic">
+        <img src="../images/8.jpg" alt="" id=" mainpic" class="mainpic">
+      </div>
+      <img src="../images/icon-previous.svg" alt="" id="prev-btn" onclick="myPrevious()">
+      <img src="../images/icon-next.svg" alt="" id="next-btn" onclick="myNext()">
+
+      <div class="thumbnails">
+        <img src="../images/house.jpeg" alt="" class="thumbimg2" id="current">
+        <img src="../images/12.jpg" alt="" class="thumbimg2">
+        <img src="../images/7.jpg" alt="" class="thumbimg2">
+        <img src="../images/8.jpg" alt="" class="thumbimg2">
+      </div>
+
+
+    </section>
+    <!--this is th code for the cart display-->
+    <div class="cart" id="cart" onmouseleave="closeCart()">
+      <h4>Wishlist</h4>
+      <div class="items" id="item-display">
+        <p id="empty">Your Wishlist is empty</p>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="pp.js"></script>
+
+</html>

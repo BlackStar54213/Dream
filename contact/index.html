@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons8-fire-48.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">LOGO</div>
+        <div class="shade" id="link">
+            <img src="/images/icon-close.svg" id="close" onclick="closeMenu()" alt="">
+
+            <div class="links">
+                <ul>
+                    <li><a href="../home/index.html">HOME</a></li>
+                    <li id="current"><a href="/sale/index.html">FOR SALE</a></li>
+                    <li><a href="/rent/index.html">FOR RENT</a></li>
+                    <li><a href="/categories/index.html">CATEGORIES</a></li>
+                    <li><a href="">MARKET TRENDS</a></li>
+                    <li><a href="../RequestPage\index.html">REQUESTS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sign">
+            <ul>
+                <li>
+                    <a href="/register/index.html" class="reg">Register</a>
+                </li>
+                <li>
+                    <a href="/dashboard/index.html"class="dash-btn"><img src="/images/bxs-dashboard (2).svg" alt=" "></a>
+                </li>
+            </ul>
+        </div>
+        <img src="/images/icon-menu-black.svg" alt="" id="menu" onclick="openMenu()">
+
+    </nav>
+    <header>
+        <h1>Here's how to get in contact with us</h1>
+        <p>Let's make you dream home come true...</p>
+    </header>
+    <main>
+        <h2 id="tite">JUST CLICK ON THE TEXT FOR WHICHEVER METHOD YOU PREFER</h2>
+        <div class="almed">
+            <a href="">
+                <div class="media">
+                    <img src="/images/whatsapp.png" alt="">
+                    WHATSAPP
+                </div>
+            </a>
+
+            <a href="">
+                <div class="media">
+                    <img src="/images/icons8-gmail-96.png" alt="">
+                    EMAIL
+                </div>
+            </a>
+
+            <a href="">
+                <div class="media">
+                    <img src="/images/icon-facebook.svg" alt="">
+                    FACEBOOK
+                </div>
+            </a>
+
+            <a href="tel:+2348155053195">
+                <div class="media">
+                    <img src="/images/icon-person.svg" alt="">
+                    CALL us (not advised)
+                </div>
+            </a>
+
+            <a href="">
+                <div class="media">
+                    <img src="/images/icon-twitter.svg" alt="">
+                    TWITTER
+                </div>
+            </a>
+
+            <a href="">
+                <div class="media">
+                    <img src="/images/icons8-github-64.png" alt="">
+                    GITHUB
+                </div>
+            </a>
+
+            <a href="">
+                <div class="media">
+                    <img src="/images/icon-instagram.svg" alt="">
+                    INSTAGRAM
+                </div>
+            </a>
+
+            <a href="">
+                <div class="media">
+                    <img src="/images/linkein.png" alt="">
+                    PINETREST
+                </div>
+            </a>
+        </div>
+        <section class="login" id="loginpage">
+
+            <form action="" id="loginform">
+                <div class="head">
+                    <h2>LOG IN</h2>
+                    <img src="../images/icon-close.svg" alt="" onclick="loginClose()">
+                </div>
+                <label for="email">Email: </label>
+                <input type="email" placeholder="example@gmail.com" required id="email">
+                <label for="password">Password</label>
+                <input type="password" placeholder="input your chosen password" required id="password"><br>
+                <button type="submit">LOG IN</button>
+                <p>Forgot password? <a href="">RESET PASSWORD</a></p>
+                <p>Not registered? <a href="">CREATE ACCOUNT</a></p>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="index.js"></script>
+
+</html>

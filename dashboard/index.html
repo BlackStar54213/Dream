@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">LOGO</div>
+        <div class="shade" id="link">
+            <img src="/images/icon-close.svg" id="close" onclick="closeMenu()" alt="">
+        <div class="links">
+            <ul>
+                <li><a href="/home/index.html">HOME</a></li>
+                <li><a href="/sale/index.html">FOR SALE</a></li>
+                <li><a href="/rent/index.html">FOR RENT</a></li>
+                <li><a href="/categories/index.html">CATEGORIES</a></li>
+                <li><a href="">MARKET TRENDS</a></li>
+                <li><a href="../RequestPage\index.html">REQUESTS</a></li>
+                <li><a href="../contact/index.html">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        </div>
+        <img src="/images/icon-menu-black.svg" alt="" id="menu" onclick="openMenu()">
+    </nav>
+    <main>
+        <section class="mainer">
+            <h1>Dashboard</h1>
+            <div class="container">
+                <a href="/upload/index.html">
+                    <div class="contain">
+                        <img src="/images/bxs-building-house.svg" alt="">
+                        <h4>Upload Properties</h4>
+                        <p>Add to your listings</p>
+                    </div>
+                </a>
+
+                <a href="/view and edit/index.html">
+                    <div class="contain">
+                        <img src="/images/bxs-building-house.svg" alt="">
+                        <h4>View Your Listings</h4>
+                        <p>view all properties you've listed, edit or delete</p>
+                    </div>
+                </a>
+                <a href="/wishlist/index.html">
+                    <div class="contain">
+                        <img src="/images/bx-list-plus copy.svg" alt="">
+                        <h4>Wishlist</h4>
+                        <p>Add or delete items from your Wishlist</p>
+                    </div>
+                </a>
+                <a href="/user profile/index.html">
+                    <div class="contain">
+                        <img src="/images/bxs-user-account.svg" alt="">
+                        <h4>User Profile</h4>
+                        <p>view and update phone numbers, address and other company details</p>
+                    </div>
+                </a>
+                <div class="contain" onclick="alert('sorry this feature has not been activated yet')">
+                    <img src="/images/bx-bar-chart.svg" alt="">
+                    <h4>Account Statistics</h4>
+                    <p>Reports on views and enquiries for your Properties</p>
+                </div>
+                <a href="/enquiry/index.html">
+                    <div class="contain">
+                        <img src="/images/bxs-chat.svg" alt="">
+                        <h4>Enquiries</h4>
+                        <p>view and reply enquiries from potentials</p>
+                    </div>
+                </a>
+                <a href="/liked/index.html">
+                    <div class="contain">
+                        <img src="/images/bx-like-black.svg" alt="">
+                        <h4>Liked Properties</h4>
+                        <p>view properties you've liked</p>
+                    </div>
+                </a>
+                <a href="/my page/">
+                    <div class="contain">
+                        <img src="/images/document.svg" alt="">
+                        <h4>My page</h4>
+                        <p>view your dedicated page as others would see it</p>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>

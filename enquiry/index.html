@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">LOGO</div>
+        <div class="links">
+            <ul>
+                <li><a href="../home/index.html">HOME</a></li>
+                <li><a href="/sale/index.html">FOR SALE</a></li>
+                <li><a href="/categories/index.html">CATEGORIES</a></li>
+                <li><a href="">MARKET TRENDS</a></li>
+                <li><a href="/RequestPage/index.html">REQUEST</a></li>
+                <li><a href="../contact/index.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="sign" onclick="wishList()"><span>WISHLIST<img src="../images/icon-person.svg" alt=""></span>
+        </div><a href="/dashboard/index.html">
+            <div class="dash-btn"><img src="/images/bxs-dashboard (2).svg" alt=""></div>
+        </a>
+    </nav>
+    <main>
+        <div class="title">
+            <h1>Enquiries Inbox</h1>
+            <p>Replies to your Enquiries will be sent to your email</p>
+        </div>
+        <section class="message-sec">
+            <div class="message">
+                <div class="pic"><img src="/images/avatar-anisha.png" alt=""></div>
+                <div class="text">
+                    <h3>Anisha Brown</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam possimus nobis unde cupiditate
+                        labore asperiores, fuga pariatur quidem aut nulla porro modi adipisci aspernatur excepturi,
+                        dolorum
+                        impedit ducimus velit odit.</p>
+                    <div class="dets">
+                        <p>Date: <span> 02/8/2023</span></p>
+                        <button onclick="textReply()">Reply</button>
+                    </div>
+                    <div class="reply" id="reply">
+                        <textarea name="reply" id="replybox" cols="50" rows="5">Text your reply</textarea>
+                        <button class="reply-btn">Submit</button>
+                        <button alt="" class="reply-btn" onclick="closeReply()" id="closereply">Close <img
+                                src="/images/icon-close-white.svg" alt=""></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="message">
+                <div class="pic"><img src="/images/avatar-richard.png" alt=""></div>
+                <div class="text">
+                    <h3>Anisha Brown</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam possimus nobis unde cupiditate
+                        labore asperiores, fuga pariatur quidem aut nulla porro modi adipisci aspernatur excepturi,
+                        dolorum
+                        impedit ducimus velit odit.</p>
+                    <div class="dets">
+                        <p>Date: <span> 02/8/2023</span></p>
+                        <button onclick="textReply()">Reply</button>
+                    </div>
+                    <div class="reply" id="reply">
+                        <textarea name="reply" id="replybox" cols="50" rows="5">Text your reply</textarea>
+                        <button class="reply-btn">Submit</button>
+                        <button alt="" class="reply-btn" onclick="closeReply()" id="closereply">Close <img
+                                src="/images/icon-close-white.svg" alt=""></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="message">
+                <div class="pic"><img src="/images/avatar-ali.png" alt=""></div>
+                <div class="text">
+                    <h3>Anisha Brown</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam possimus nobis unde cupiditate
+                        labore asperiores, fuga pariatur quidem aut nulla porro modi adipisci aspernatur excepturi,
+                        dolorum
+                        impedit ducimus velit odit.</p>
+                    <div class="dets">
+                        <p>Date: <span> 02/8/2023</span></p>
+                        <button onclick="textReply()">Reply</button>
+                    </div>
+                    <div class="reply" id="reply">
+                        <textarea name="reply" id="replybox" cols="50" rows="5">Text your reply</textarea>
+                        <button class="reply-btn">Submit</button>
+                        <button alt="" class="reply-btn" onclick="closeReply()" id="closereply">Close <img
+                                src="/images/icon-close-white.svg" alt=""></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="message">
+                <div class="pic"><img src="/images/12.jpg" alt=""></div>
+                <div class="text">
+                    <h3>Anisha Brown</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam possimus nobis unde cupiditate
+                        labore asperiores, fuga pariatur quidem aut nulla porro modi adipisci aspernatur excepturi,
+                        dolorum
+                        impedit ducimus velit odit.</p>
+                    <div class="dets">
+                        <p>Date: <span> 02/8/2023</span></p>
+                        <button onclick="textReply()">Reply</button>
+                    </div>
+                    <div class="reply" id="reply">
+                        <textarea name="reply" id="replybox" cols="50" rows="5">Text your reply</textarea>
+                        <button class="reply-btn">Submit</button>
+                        <button alt="" class="reply-btn" onclick="closeReply()" id="closereply">Close <img
+                                src="/images/icon-close-white.svg" alt=""></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+    let messages = document.getElementsByClassName('message');
+    let replyboxes = document.getElementsByClassName('reply');
+    function textReply() {
+        document.getElementById('reply').style.display = 'block';
+    }
+    function closeReply() {
+        document.getElementById('reply').style.display = 'none';
+    }
+</script>
+
+</html>

@@ -1,0 +1,580 @@
+   * {
+       margin: 0%;
+       padding: 0%;
+       font-family: 'raleway';
+   }
+
+   nav {
+       display: flex;
+       width: 80%;
+       align-items: center;
+       margin-top: 20px;
+       margin-left: auto;
+       margin-right: 100px;
+       justify-content: space-between;
+   }
+
+   .link {
+       display: flex;
+       flex-direction: row;
+       column-gap: 70px;
+       margin-left: 100px;
+   }
+
+   .links {
+       padding-bottom: 7px;
+   }
+
+   .links:hover {
+       border-bottom: 2px solid black;
+       transition: all .2s;
+       padding-bottom: 5px;
+   }
+
+   nav a {
+       color: black;
+       text-decoration: none;
+       font-size: 18px;
+       font-weight: 500;
+       font-style: normal;
+   }
+
+   #sign {
+       background-color: #0F1C25;
+       color: white;
+       padding: 10px;
+       text-align: center;
+       width: 80px;
+   }
+
+   #current {
+       border-bottom: 2px solid black;
+   }
+
+   .side-nav {
+       width: 6%;
+       height: 200px;
+       position: absolute;
+       margin-top: 80px;
+   }
+
+   .sidelink {
+       transform: rotateY('90DEG');
+   }
+
+   .side-nav li {
+       transform: rotate(-90deg);
+       padding-bottom: 90px;
+       font-weight: 600;
+       margin-left: 80px;
+       list-style: none;
+   }
+
+   .maincontent {
+       width: 90%;
+       margin-left: auto;
+       height: 700px;
+       margin-right: 5%;
+       margin-top: 10px;
+   }
+
+   .images {
+       background-color: #1B364B;
+       position: absolute;
+       display: flex;
+       flex-direction: row;
+       height: 700px;
+       width: 90%;
+       justify-content: space-evenly;
+   }
+
+   .header {
+       display: flex;
+       flex-direction: row;
+   }
+
+   .text {
+       color: white;
+       width: 43%;
+       z-index: 5;
+       position: absolute;
+       margin-top: 30px;
+   }
+
+   .text h1 {
+       font-weight: 600;
+       font-size: 45px;
+       margin-top: 90px;
+       line-height: 60px;
+       padding: 30px;
+   }
+
+   .text p {
+       width: 50%;
+       padding: 40px;
+       padding-top: 0%;
+   }
+
+   .right,
+   .left {
+       width: 50%;
+   }
+
+   #bg {
+       height: 700px;
+       width: 100%;
+   }
+
+   #up {
+       height: 310px;
+       width: 100%;
+       margin-top: -25px;
+   }
+
+   #down {
+       height: 310px;
+       width: 100%;
+       margin-top: 130px;
+       transform: rotateX(180deg);
+   }
+
+   .btn button {
+       padding: 10px;
+       width: 80px;
+       font-size: 18px;
+       font-weight: 600;
+   }
+
+   .btn {
+       margin-left: 40px;
+   }
+
+   #buy {
+       background-color: #0F1C25;
+       color: white;
+       border: none;
+   }
+
+   #rent {
+       background-color: white;
+       color: #0F1C25;
+       border: none;
+   }
+
+   #filter-btn {
+       display: none;
+   }
+
+   .filter {
+       background-color: rgba(255, 255, 255, 0.63);
+       width: 140%;
+       height: 120px;
+       margin-top: 2px;
+       margin-left: 40px;
+       display: flex;
+       flex-direction: row;
+       backdrop-filter: blur(1px);
+       column-gap: 20px;
+   }
+
+   .location,
+   .type,
+   .price {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       width: 30%;
+       margin-top: 30px;
+   }
+
+   #menu,
+   #menu-close,
+   #filterclose {
+       display: none;
+   }
+
+   .dropbtn {
+       padding: 10px;
+       background-color: rgba(255, 255, 255, 0);
+       border: none;
+       color: black;
+       font-size: 18px;
+       font-weight: 600;
+   }
+
+   .dropdown {
+       position: relative;
+       display: inline-block;
+   }
+
+   .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: #f1f1f1;
+       min-width: 160px;
+       margin-left: -60px;
+       padding: 10px;
+       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+       z-index: 1;
+   }
+
+   .dropdown-content a {
+       color: black;
+       padding: 0px 10px;
+       text-decoration: none;
+       display: block;
+   }
+
+
+   .dropdown-content a:hover {
+       background-color: #ddd;
+   }
+
+   .dropbtn:hover .dropdown-content {
+       display: block;
+   }
+
+   .location p,
+   .price p,
+   .type p {
+       width: 100%;
+       margin-left: -40px;
+       color: rgb(70, 68, 68);
+       font-size: 16px;
+       font-weight: 600;
+
+   }
+
+   .location img,
+   .price img,
+   .type img {
+       transform: rotate(90deg);
+       height: 13px;
+       padding-left: 4px;
+   }
+
+   .type .dropdown-content {
+       margin-left: -30px;
+   }
+
+   .search-btn {
+       padding: 5px;
+       margin: 25px;
+       background-color: #0F1C25;
+       height: 60px;
+   }
+
+   .introtext {
+       text-align: center;
+       width: 60%;
+       margin-left: 20%;
+       font-size: larger;
+   }
+
+   .introtext h2 {
+       text-decoration: underline;
+   }
+
+   .introtext p {
+       padding-top: 20px;
+       word-spacing: 5px;
+   }
+
+
+   .slide {
+       display: flex;
+       flex-direction: row;
+       column-gap: 20px;
+       overflow-x: scroll;
+   }
+
+   .card {
+       padding-top: 20px;
+       background-color: white;
+       width: 250px;
+       margin: 5px;
+       border: 2px solid #0F1C25;
+       border-radius: 5%;
+       padding: 20px 10px;
+   }
+
+   .card h3 {
+       text-align: center;
+       margin: 3px;
+   }
+
+   .btns {
+       margin-top: 10px;
+       display: flex;
+       justify-content: space-evenly;
+   }
+
+   .btns button {
+       padding: 7px;
+       border: none;
+       border-radius: 5%;
+       background-color: #0F1C25;
+       color: white;
+       font-size: large;
+       font-weight: 600;
+
+   }
+
+   .btns button:hover {
+       border: #0F1C25 2px solid;
+       background-color: white;
+       color: #0F1C25;
+       transition: all .5s;
+   }
+
+   .card img {
+       width: 100%;
+   }
+
+   main h2 {
+       margin-top: 50px;
+       font-size: 35px;
+       z-index: 6;
+       text-align: center;
+   }
+
+   .slide-container {
+       width: 100%;
+       margin-top: 10px;
+       text-align: center;
+   }
+
+   .slide-container h2 {
+       font-size: 40px;
+       color: hsl(228, 39%, 23%);
+   }
+
+   h4 {
+       margin-bottom: 15px;
+       color: hsl(228, 39%, 23%);
+   }
+
+   .contain {
+       margin-top: 30px;
+       width: 11.1cm;
+       padding: 20px;
+       background-color: hsl(0, 0%, 98%);
+       text-align: center;
+   }
+
+   .check {
+       color: white;
+       padding: 4px;
+       background-color: rgb(202, 16, 16);
+       margin: 5px;
+       border-radius: 5px;
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   .now img {
+       width: 2.4cm;
+       height: 2.4cm;
+       margin-top: -70px;
+   }
+
+   .contain p {
+       color: hsl(227, 12%, 61%);
+   }
+
+   .slide {
+       display: flex;
+       flex-direction: row;
+       column-gap: 20px;
+       overflow-x: scroll;
+       padding: 25px;
+   }
+
+   .now button {
+       padding: 10px;
+       border: none;
+       color: white;
+       font-weight: 700;
+       background-color: #0F1C25;
+       border-radius: 5px;
+       margin-top: 10px;
+   }
+
+   .now button:hover {
+       background-color: white;
+       border: #0F1C25 solid 2px;
+       color: #0F1C25;
+       transition: all .5s;
+   }
+
+   .dash-btn {
+       transition: all .5s;
+   }
+
+   .dash-btn:hover {
+       padding: 5px;
+       border: 2px solid #0F1C25;
+   }
+
+   #sign:hover {
+       background-color: white;
+       color: #0F1C25;
+       border: #0F1C25 solid 2px;
+       transition: all .5s;
+   }
+
+   .bottom {
+       display: flex;
+       font-size: 20px;
+       padding: 30px;
+       flex-wrap: wrap;
+       background-color: #0F1C25;
+       color: white;
+       margin-top: 40px;
+       justify-content: space-evenly;
+
+   }
+
+   .bottom li {
+       list-style: none;
+       padding: 10px;
+   }
+
+   .bottom button {
+       padding: 10px;
+       background-color: #0F1C25;
+       color: white;
+       width: 60px;
+       border: 2px solid white;
+       border-radius: 10px;
+   }
+
+   .bottom button:hover {
+       background-color: white;
+       color: #0F1C25;
+       font-weight: 600;
+       transition: all .5s;
+       border: #0F1C25;
+   }
+
+   .footlogo {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       row-gap: 90px;
+   }
+
+   footer input {
+       padding: 12px;
+       border-radius: 10px;
+       outline: none;
+       border: none;
+   }
+
+   @media only screen and (max-width:450px) {
+       header {
+           width: 100%;
+           margin: 0%;
+       }
+
+       nav {
+           width: 80%;
+           display: none;
+           flex-direction: column;
+           row-gap: 20px;
+           position: fixed;
+           padding: 20px;
+           background-color: white;
+           z-index: 9;
+           margin-left: 5%;
+       }
+
+       .link {
+           flex-direction: column;
+           padding: 50px;
+           text-align: center;
+           margin: 0%;
+           row-gap: 20px;
+       }
+
+       .link a {
+           font-size: 30px;
+           font-weight: 700;
+       }
+
+       .left {
+           display: none;
+       }
+
+       .images {
+           width: 100%;
+
+       }
+
+       .right {
+           width: 100%;
+       }
+
+       header {
+           width: 100%;
+       }
+
+       .maincontent {
+           width: 100%;
+           margin: 0%;
+       }
+
+       #filter-btn {
+           display: inline-block;
+       }
+
+       .filter {
+           display: none;
+           width: 100%;
+           flex-wrap: wrap;
+           height: fit-content;
+           font-size: 14px;
+           justify-content: space-evenly;
+           position: absolute;
+           margin: 0%;
+           margin-top: -200px;
+           background-color: rgba(255, 255, 255, 0.919);
+       }
+
+       #filter-btn {
+           background-color: #0F1C25;
+           color: white;
+       }
+
+       .text {
+           margin-top: 0px;
+           width: 100%;
+           background-color: #0f1c257c;
+       }
+
+       #menu,
+       #menu-close,
+       #filterclose {
+           display: block;
+       }
+
+       #menu {
+           height: 30px;
+           position: absolute;
+           margin-left: 80%;
+           margin-top: 20px;
+       }
+
+       #menu-close,
+       #filterclose {
+           height: 25px;
+           position: absolute;
+           margin-left: 80%;
+
+       }
+
+       #filterclose {
+           margin-top: 15px;
+       }
+   }
