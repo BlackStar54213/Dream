@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">LOGO</div>
+        <div class="shade" id="link">
+            <img src="/images/icon-close.svg" id="close" onclick="closeMenu()" alt="">
+
+            <div class="links">
+                <ul>
+                    <li><a href="../home/index.html">HOME</a></li>
+                    <li id="current"><a href="/sale/index.html">FOR SALE</a></li>
+                    <li><a href="/rent/index.html">FOR RENT</a></li>
+                    <li><a href="/categories/index.html">CATEGORIES</a></li>
+                    <li><a href="">MARKET TRENDS</a></li>
+                    <li><a href="../contact/index.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sign"><span>WISHLIST<img src="../images/icon-person.svg" alt=""></span>
+        </div><a href="/dashboard/index.html">
+            <div class="dash-btn"><img src="/images/bxs-dashboard (2).svg" alt=""></div>
+        </a>
+        <img src="/images/icon-menu.svg" alt="" id="menu" onclick="openMenu()">
+
+    </nav>
+    <main>
+        <div class="text">
+            <div class="head">
+                <h1>DREAM RENTAL REQUEST FORM</h1>
+                <p>Choose your dream home</p>
+            </div>
+            <div class="form">
+                <label for="subject">SUBJECT: </label>
+                <input type="text" id="subject" placeholder="subject">
+                <label for="des">Please fill in the text area in the same format as the example =></label>
+                <textarea name="des" id="des" cols="30" rows="10"
+                    placeholder="">I need a house for this purpose and this price range in this location... including this important details</textarea>
+                <label for="des">Input any additional information <sup style="font-size: 11px;">*optional</sup></label>
+                <textarea name="des" id="des" cols="30" rows="3" placeholder=""></textarea>
+
+                <button type="submit">SEND</button>
+            </div>
+        </div>
+        <div class="images">
+            <img src="../images/logo.svg" alt="" class="image" id="logo">
+            <img src="../images/8.jpg" alt="" class="image">
+            <img src="../images/2.jpg" alt="" class="image">
+            <img src="../images/bg.jpg" alt="" class="image">
+            <img src="../images/16.jpg" alt="" class="image">
+        </div>
+    </main>
+
+</body>
+<script>
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("image");
+        for (let i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+
+
+    function openMenu() {
+        document.getElementById('link').style.display = 'block';
+        document.getElementById('menu').style.display = 'none';
+        document.getElementById('close').style.display = 'block';
+    }
+
+
+    function closeMenu() {
+        document.getElementById('link').style.display = 'none';
+        document.getElementById('menu').style.display = 'block';
+        document.getElementById('close').style.display = 'none';
+    }
+</script>
+
+</html>

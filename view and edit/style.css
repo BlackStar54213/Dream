@@ -1,0 +1,301 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #0F1C25;
+    display: flex;
+    padding: 5px;
+    font-size: 15px;
+    flex-wrap: wrap;
+    color: white;
+    z-index: 4;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+}
+
+li:hover {
+    border-bottom: 2px solid white;
+    transition: all .6s;
+}
+
+nav ul,
+nav span {
+    color: white;
+    display: flex;
+    list-style: none;
+    column-gap: 0px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+li,
+nav span {
+    padding: 10px;
+    color: white;
+}
+
+.links a,
+nav span {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav span img {
+    width: auto;
+    padding-left: 10px;
+}
+
+.logo {
+    font-size: 18px;
+    padding: 4px;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.dash-btn {
+    padding: 5px;
+    margin-top: 3px;
+}
+
+.dash-btn:hover {
+    background-color: gray;
+}
+
+main {
+    padding-top: 50px;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    overflow-x: scroll;
+    padding: 40px;
+}
+
+.card {
+    padding-top: 20px;
+    background-color: white;
+    width: 250px;
+    margin: 10px;
+    border: 2px solid #0F1C25;
+    border-radius: 5%;
+    padding: 20px 10px;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 3px;
+}
+
+.btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btns button {
+    padding: 7px;
+    width: 100px;
+    border: none;
+    border-radius: 5%;
+    background-color: #0F1C25;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+
+}
+
+.card img {
+    width: 100%;
+}
+
+.editor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#currentcontain::before {
+    content: 'Current';
+    font-size: 30px;
+    margin-left: 33%;
+    color: white;
+    padding-top: 10px;
+    width: 100%;
+}
+
+#currentcontain {
+    background-color: #0F1C25;
+
+}
+
+.form {
+    padding-top: 20px;
+    width: 40%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'raleway';
+    margin-top: 25px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.form input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+    background-color: white;
+    outline: none;
+    border: rgb(0, 0, 0) 2px solid;
+
+}
+
+
+.locate {
+    background-image: url(/images/icon-angle-right.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+
+#town {
+    margin-left: -40px;
+}
+
+.locate {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+}
+
+.location {
+    width: 45%;
+    margin-left: 8%;
+}
+
+.drop {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    padding: 10px;
+    margin-left: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: -20px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.location:hover .dropdown-content {
+    display: block;
+}
+
+.images {
+    width: 50%;
+}
+
+
+.mainimg img {
+    width: auto;
+    height: 9cm;
+    border-radius: 20px;
+}
+
+#price {
+    background-image: url(/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+
+.thumbnails {
+    display: flex;
+    column-gap: 20px;
+}
+
+.thumbimg,
+.thumbimg2 {
+    height: 1.9cm;
+    border-radius: 10px;
+}
+
+.thumbimg:hover,
+.thumbimg2:hover {
+    opacity: .5;
+    transition: all .4s;
+}
+
+.images {
+    margin-top: 150px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#current {
+    opacity: 0.4;
+    border: rgb(156, 13, 13) solid 3px;
+}
+
+
+.radio {
+    display: flex;
+    margin-left: 8%;
+}
+
+.radio em {
+    margin-left: -40px;
+}
+
+.radio input {
+    width: 100px;
+}
+
+.visual-uploads {
+    padding: 20px;
+    border: #0F1C25 solid 2px;
+    border-radius: 20px;
+    width: 70%;
+    margin-left: 12%;
+}

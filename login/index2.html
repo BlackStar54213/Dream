@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log In</title>
+    </head>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        main {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(/images/17.jpg);
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .form {
+            background-color: rgba(255, 255, 255, 0.595);
+            width: 44%;
+            margin-top: 23vh;
+            text-align: center;
+            padding: 8vh;
+            backdrop-filter: blur(4px);
+            position: relative;
+            overflow: hidden;
+            box-shadow: rgb(255, 255, 255) 0px 0px 150px;
+            border-radius: 10px;
+            user-select: none;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-family: 'irish grover';
+            text-decoration: underline;
+        }
+
+        form {
+            position: relative;
+        }
+
+        input {
+            padding: 10px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            width: 60%;
+            margin: 20px 00px;
+            font-family: monset;
+            font-size: 17px;
+            letter-spacing: 3px;
+        }
+
+        .showhide {
+            width: .5cm;
+            position: absolute;
+            right: 9%;
+            top: 80px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+
+        .border-top {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 5px;
+            background-image: linear-gradient(to left, #9020ff, red, orange, #fcc23f);
+            animation: animate-border-top 2s linear infinite;
+        }
+
+        @keyframes animate-border-top {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .border-right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background-image: linear-gradient(to bottom, #171618, #fcc23f);
+            animation: animate-border-right 2s linear infinite;
+            animation-delay: 1s;
+        }
+
+        @keyframes animate-border-right {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
+        }
+
+        .border-bottom {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 5px;
+            background-image: linear-gradient(to right, #9020ff, red, orange, #fcc23f);
+            animation: animate-border-bottom 2s linear infinite;
+        }
+
+        @keyframes animate-border-bottom {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .border-left {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 5px;
+            background-image: linear-gradient(to top, #171618, #fcc23f);
+            animation: animate-border-left 2s linear infinite;
+            animation-delay: 1s;
+        }
+
+        @keyframes animate-border-left {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        button {
+            padding: 8px;
+            width: 100px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-family: raleway;
+            font-weight: 800;
+            background-image: linear-gradient(to bottom right, #9020ff, red, orange, #fcc23f);
+        }
+
+        button:hover {
+            width: 120px;
+            font-size: 20px;
+            background-image: none;
+            border: 2px solid red;
+            background-color: white;
+            transition: ease-in-out .6s;
+            background: var(--REDLACK, linear-gradient(to bottom right, #9020ff, red, orange, #fcc23f));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-family: azeret mono;
+            margin-top: 20px;
+        }
+
+        #hide {
+            display: none;
+        }
+
+        @media only screen and (max-width:750px) {
+            * {
+                margin: 0%;
+                padding: 0%;
+            }
+
+            main {
+                background-image: url(/images/bg.png);
+            }
+
+            .form {
+                width: 65%;
+                margin-top: 13vh;
+            }
+
+            input {
+                width: 100%;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .showhide {
+                right: 0%;
+                padding-right: 0%;
+            }
+        }
+    </style>
+
+    <body>
+        <main>
+            <div class="form">
+                <span class="border-top"></span>
+                <span class="border-right"></span>
+                <span class="border-bottom"></span>
+                <span class="border-left"></span>
+                <h1>LOG IN</h1>
+                <form action="">
+                    <input type="email" placeholder="example@gmail.com" required><br>
+                    <input type="password" placeholder="password" required id="password">
+                    <img src="/images/camera.png" alt="" onclick="showPassword()" id="show" class="showhide">
+                    <img src="/images/image.png" alt="" onclick="hidePassword()" id="hide" class="showhide">
+                    <hr>
+                    <button type="submit">LOG IN</button>
+                </form>
+                <p>Don't have an account? <a href="">Create an account</a></p>
+            </div>
+        </main>
+    </body>
+    <script>
+        let num = 0;
+        const btn = document.getElementById("password");
+        const show = document.getElementById("show");
+        const hide = document.getElementById("hide");
+        function showPassword() {
+            btn.type = 'text';
+            show.style.display = 'none';
+            hide.style.display = 'block';
+        }
+
+        function hidePassword() {
+            let num = 0;
+            const btn = document.getElementById("password");
+            btn.type = 'password';
+            hide.style.display = 'none';
+            show.style.display = 'block';
+        }
+    </script>
+
+</html>

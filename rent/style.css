@@ -1,0 +1,408 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #0F1C25;
+    display: flex;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    z-index: 4;
+    justify-content: space-evenly;
+}
+
+nav ul,
+nav span {
+    color: white;
+    display: flex;
+    list-style: none;
+    column-gap: 0px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+li,
+nav span {
+    padding: 10px;
+    color: white;
+}
+
+.links a,
+nav span {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav span img {
+    width: auto;
+    padding-left: 10px;
+}
+
+.logo {
+    font-size: 18px;
+    padding: 4px;
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+header {
+    height: 8cm;
+    background-image: url(/images/17.jpg);
+    color: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+    padding-top: 5cm;
+}
+
+header h1 {
+    background-color: rgba(83, 83, 83, 0.827);
+    text-transform: underline 4px white;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    font-size: 54px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    width: 50%;
+    margin-left: 25%;
+}
+
+header p {
+
+    padding-top: 1cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.side-nav,
+.side-nav2 {
+    position: fixed;
+    top: 50px;
+    background-color: black;
+    width: 5%;
+    border: black 2px solid;
+    height: fit-content;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.side-nav img,
+.side-nav2 img {
+    height: 1cm;
+    width: 1cm;
+}
+
+.more a {
+    color: black;
+    font-size: 20px;
+    float: right;
+}
+
+.icons:hover {
+    background-color: rgb(156, 13, 13);
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 20%;
+}
+
+.icons p {
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    margin-left: -10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(/images/bg-simplify-section-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -80px;
+    background-clip: border-box;
+}
+
+.img img {
+    height: 5cm;
+    border-radius: 10px;
+    width: 100%;
+}
+
+div.card {
+    padding-top: 20px;
+    background-color: white;
+    width: 250px;
+    margin: 10px;
+    border: 2px solid #0F1C25;
+    border-radius: 5%;
+    padding: 10px 7px;
+    height: 300px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card p {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+
+.react {
+    margin-top: -160px;
+    display: flex;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    justify-content: space-evenly;
+}
+
+.react img {
+    height: .5cm;
+    width: .5cm;
+    padding: 10px;
+    background-color: #0F1C25;
+    border-radius: 50%;
+}
+
+.react img:hover {
+    background-color: black;
+}
+
+.things {
+    width: 100%;
+    position: relative;
+}
+
+.dash-btn {
+    padding: 8px;
+    border-radius: 4px;
+    position: absolute;
+    right: 150px;
+}
+
+.dash-btn:hover {
+    background-color: black;
+}
+
+.upsale {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    overflow-x: scroll;
+    padding: 40px;
+
+}
+
+.things h2 {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    margin-left: 20px;
+    width: 95%;
+    margin-top: 30px;
+}
+
+.side-nav2 {
+    display: none;
+}
+
+.side-nav {
+    height: fit-content;
+}
+
+
+.bottom {
+    display: flex;
+    font-size: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+    background-color: #0F1C25;
+    color: white;
+    margin-top: 40px;
+    justify-content: space-evenly;
+
+}
+
+li:hover {
+    border-bottom: 2px solid white;
+    transition: all .6s;
+}
+
+.bottom li {
+    list-style: none;
+}
+
+.footlogo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 90px;
+}
+
+footer button {
+    padding: 10px;
+    background-color: white;
+    font-size: 18px;
+    border: 2px solid black;
+}
+
+footer input {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.cart {
+    position: fixed;
+    display: none;
+    width: 20%;
+    top: 8%;
+    border-radius: 10px;
+    padding: 20px;
+    right: 4%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+    height: 300px;
+    background-color: white;
+    overflow-y: scroll;
+    box-shadow: 0px 10px 20px rgb(114, 114, 114);
+}
+
+#close-btn {
+    display: none;
+}
+
+.card input {
+    width: 80px;
+    border: none;
+    background-color: none;
+    font-size: 17px;
+}
+
+#menu,
+#close {
+    display: none;
+}
+
+@media only screen and (max-width:680px) {
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+#menu {
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    position: absolute;
+    right: 10%;
+    height: 20px;
+    top: 30%;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.753);
+    backdrop-filter: blur(5px);
+}
+
+#menu:hover {
+    padding: 3px;
+}
+
+#close {
+    position: absolute;
+    top: 7%;
+    z-index: 889;
+    height: 30px;
+    right: 11%;
+}
+    .logo, .sign{
+        display: none;
+    }
+    nav{
+        background-color: rgba(255, 255, 255, 0);
+        justify-content: space-evenly;
+    }
+        .dash-btn{
+            left: 10%;
+                    right: 0%;
+                    width: 30px;
+                    padding: 0%;
+                    padding: 5px;
+                    background-color: rgba(68, 68, 68, 0.753);
+                        backdrop-filter: blur(5px);
+        }
+    header h1 {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .shade {
+        display: none;
+        width: 100%;
+        height: 800px;
+        position: fixed;
+        background-color: #0f1c25be;
+        left: 0%;
+    }
+
+    .links ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        position: absolute;
+        width: 80%;
+        left: 6%;
+        margin-top: 50px;
+        text-align: center;
+        z-index: 89;
+        padding: 10px;
+        background-color: white;
+        opacity: 1;
+    }
+
+    .side-nav,
+    .side-nav2 {
+        width: 17%;
+        display: none;
+    }
+
+    .links a {
+        color: #0F1C25;
+        font-size: 25px;
+    }
+
+
+    header {
+        background-position: -250px 0px;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .cart {
+        width: 80%;
+    }
+}

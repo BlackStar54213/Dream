@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties for sale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">LOGO</div>
+        <div class="shade" id="link">
+            <img src="/images/icon-close.svg" id="close" onclick="closeMenu()" alt="">
+            <div class="links">
+                <ul>
+                    <li><a href="../home/index.html">HOME</a></li>
+                    <li><a href="/rent/index.html">FOR RENT</a></li>
+                    <li id="current"><a href="/categories/index.html">CATEGORIES</a></li>
+                    <li><a href="">MARKET TRENDS</a></li>
+                    <li><a href="/RequestPage/index.html">REQUEST</a></li>
+                    <li><a href="../contact/index.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sign" onclick="wishList()"><span>WISHLIST<img src="../images/icon-person.svg" alt=""></span>
+        </div><a href="/dashboard/index.html">
+            <div class="dash-btn"><img src="/images/bxs-dashboard (2).svg" alt=""></div>
+        </a>
+        <img src="/images/icon-menu-black.svg" alt="" id="menu" onclick="openMenu()">
+    </nav>
+    <header>
+        <h1>Properties for sale</h1>
+        <p>Buy it out</p>
+    </header>
+    <main>
+        <section class="side-nav" id="sidenav" onclick="openNav()">
+            <div class="icons">
+                <img src='/images/chart.svg' alt="">
+            </div>
+        </section>
+
+        <section class="side-nav2" id="sidenav2">
+            <div class="icons" onclick="closeNav()">
+                <img src='/images/icon-close-white.svg' alt="">
+            </div>
+            <div class="icons">
+                <img src="/images/icon-facebook.svg" alt="">
+            </div>
+            <div class="icons">
+                <img src="/images/icon-twitter.svg" alt="">
+            </div>
+            <div class="icons"><img src="/images/icon-instagram.svg" alt="">
+            </div>
+            <div class="icons"><img src="/images/icons8-gmail-96.png" alt="">
+            </div>
+        </section>
+
+        <section class="things">
+            <h2>Houses<span class="more"><a href="">SEE MORE</a></span></h2>
+            <section class="upsale">
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <h2>Lands<span class="more"><a href="">SEE MORE</a></span></h2>
+            <section class="upsale">
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <h2>Estate<span class="more"><a href="">SEE MORE</a></span></h2>
+            <section class="upsale">
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/16.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <h3>3 story building</h3>
+                            <p class="type">TYPE: <span>Duplex</span> </p>
+                            <p class="size">SIZE: <span>4 rooms</span> </p>
+                            <p class="price">PRICE: <span id="price">300,000</span> per annum </p>
+                        </div>
+                        <div class="react">
+                            <img src="/images/bx-like.svg" alt="" class="like">
+                            <a href="/details/index.html" class="buy"><img src="/images/bxs-purchase-tag.svg"
+                                    alt=""></a>
+                            <img src="/images/bx-list-plus.svg" alt="" onclick="addToCart()" class="lister">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+        </section>
+
+    </main>
+    <footer>
+
+        <section class="bottom">
+            <div class="footlogo">
+                <img src="../images/logo.svg" alt="">
+                <div class="media">
+                    <img src="../images/icon-facebook.svg" alt="">
+                    <img src="../images/icon-youtube.svg" alt="">
+                    <img src="../images/icon-twitter.svg" alt="">
+                    <img src="../images/icon-pinterest.svg" alt="">
+                    <img src="../images/icon-instagram.svg" alt="">
+                </div>
+            </div>
+            <div class="forwardlinks">
+                <ul>
+                    <li>Home</li>
+                    <li>Pricing</li>
+                    <li>Products</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            <div class="carer">
+                <ul>
+                    <li>Careers</li>
+                    <li>Community</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="news">
+                <form id="newsletter">
+                    <input type="email" required autocomplete="email" placeholder="Updates in your inbox…">
+                    <button class="foot-btn">Go</button><br>
+
+                </form>
+                <p id="copy">Copyright 2020. All Rights Reserved</p>
+            </div>
+        </section>
+    </footer>
+    <div class="cart" id="cart" onmouseleave="closeCart()">
+        <h4>Cart</h4>
+        <div class="items" id="item-display">
+            <p id="empty">Your cart is empty</p>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
